@@ -15,7 +15,7 @@ public class Main {
 
             PreparedStatement preparedStatment =
                     connection.prepareStatement(
-                            "Select * from m_kimwsp where nazwa like ?");
+                            "Select * from car where nazwa like ?");
             preparedStatment.setString(1, "%Fiat%");
             ResultSet result = preparedStatment.executeQuery();
             while (result.next()){
